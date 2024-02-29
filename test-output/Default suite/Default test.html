@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 29 15:18:39 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1374 seconds (1374769 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Varification of NewBikes DropDown", "ZigWheels smokes"</td>
+<td><div><pre>java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
+	at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/smokes.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1565881543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565881543'><pre>java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
+	at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/smokes.feature:17)
+</pre></div></td>
+<td>43</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Zigwheels Application  funcionalities", "ZigWheels End To End"</td>
+<td><div><pre>java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
+	at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/EndToEnd.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace454248060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454248060'><pre>java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
+	at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/EndToEnd.feature:13)
+</pre></div></td>
+<td>55</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Google login with Invalid mail", "ZigWheels End To End"</td>
+<td></td>
+<td>65</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Cardekho Webpage", "ZigWheels Regressions"</td>
+<td></td>
+<td>50</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Displays Bikes by Applying displcement filter", "ZigWheels Regressions"</td>
+<td></td>
+<td>62</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Fundamental Elements Validation", "ZigWheels smokes"</td>
+<td></td>
+<td>51</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "used car and search bar Hover validation", "ZigWheels Regressions"</td>
+<td></td>
+<td>82</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Facebook login Validations", "ZigWheels End To End"</td>
+<td></td>
+<td>88</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate Login using Facebook with Invalid credentials", "ZigWheels Regressions"</td>
+<td></td>
+<td>49</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Facebook login Validations", "ZigWheels End To End"</td>
+<td></td>
+<td>68</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validations of New Cars Fuel Type Filter", "ZigWheels Regressions"</td>
+<td></td>
+<td>64</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login using Google option with valid email", "ZigWheels Regressions"</td>
+<td></td>
+<td>118</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Displays used Cars in perticular location", "ZigWheels smokes"</td>
+<td></td>
+<td>311</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Google login with Valid mail", "ZigWheels End To End"</td>
+<td></td>
+<td>72</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate Login using Facebook with Invalid credentials", "ZigWheels Regressions"</td>
+<td></td>
+<td>52</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login using Google option with invalid credential", "ZigWheels smokes"</td>
+<td></td>
+<td>54</td>
+<td>TestRunner.testRunner@41a0aa7d</td></tr>
+</table><p>
+</body>
+</html>
