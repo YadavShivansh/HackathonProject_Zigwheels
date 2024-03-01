@@ -29,7 +29,8 @@ Feature: ZigWheels smokes
     Given Homepage of ZigWheels
     When User hover on Used Cars
     And User select "<Location>" in Location options
-    And Scroll till  list of popular Brands
+    And User scroll till list of popular Brands
+    Then User scoll popular model list 
     Then User selects brands and displays cars list
 
     Examples: 

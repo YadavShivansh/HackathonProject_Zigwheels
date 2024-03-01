@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
-@CucumberOptions(features = { "src//test//resources//Features" },
+@CucumberOptions(features = { "src//test//resources//Features//EndToEnd.feature" },
 
 		glue = "StepDefination",
 

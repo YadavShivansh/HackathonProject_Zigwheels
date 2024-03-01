@@ -50,6 +50,12 @@ public class usedCars extends BasePage {
 	@FindBy(xpath = "//div[normalize-space(text())='Popular Models']")
 	public WebElement scrollCar;
 
+	@FindBy(xpath = "//div[@class='gsc_thin_scroll']")
+	public WebElement popularbranddiv;
+
+	@FindBy(xpath = "//div[@class='gsc_thin_scroll']/ul/li[9]")
+	public WebElement lastele;
+
 	@FindBy(xpath = "//ul[@class='zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10']//li")
 	public List<WebElement> brands;
 
@@ -95,8 +101,13 @@ public class usedCars extends BasePage {
 	public void scroll_to_popularBrands() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		wait.until(ExpectedConditions.visibilityOf(scrollCar));
-		js.executeScript("arguments[0].scrollIntoView;", scrollCar);
+		js.executeScript("window.scrollBy(0,450)", "");
+
+	}
+
+	public void scroll_popularBrands_List() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollTop=arguments[1].offsetTop", popularbranddiv, lastele);
 	}
 
 	public void extractCarDetails() throws InterruptedException, IOException {
@@ -133,7 +144,8 @@ public class usedCars extends BasePage {
 
 			}
 
-			js.executeScript("arguments[0].scrollIntoView();", scrollCar);
+			// js.executeScript("arguments[0].scrollIntoView();", scrollCar);
+			js.executeScript("window.scrollBy(0,450)", "");
 			js.executeScript("arguments[0].click();", selectBrnds.get(i));
 
 		}

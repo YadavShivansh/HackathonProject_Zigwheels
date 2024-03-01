@@ -38,8 +38,6 @@ public class stepDef1 {
 
 		driver = HelperClass.getDriver();
 		driver.navigate().to("https://www.zigwheels.com/");
-		// f1 = new smoke(driver);
-		// f2 = new regression(driver);
 		fE = new fundamentalElement(driver);
 		bike = new newBikes(driver);
 		car = new usedCars(driver);
@@ -218,10 +216,16 @@ public class stepDef1 {
 
 	}
 
-	@When("Scroll till  list of popular Brands")
-	public void scroll_till_list_of_popular_brands() {
+	@When("User scroll till list of popular Brands")
+	public void user_scroll_till_list_of_popular_brands() {
 
 		car.scroll_to_popularBrands();
+	}
+
+	@Then("User scoll popular model list")
+	public void user_scoll_popular_model_list() {
+
+		car.scroll_popularBrands_List();
 	}
 
 	@Then("User selects brands and displays cars list")

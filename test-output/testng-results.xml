@@ -1,236 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T15:18:39 IST" name="Default suite" finished-at="2024-02-29T15:41:34 IST" duration-ms="1374769">
+  <suite started-at="2024-03-01T13:24:03 IST" name="Default suite" finished-at="2024-03-01T13:32:45 IST" duration-ms="521746">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-29T15:18:39 IST" name="Default test" finished-at="2024-02-29T15:41:34 IST" duration-ms="1374769">
+    <test started-at="2024-03-01T13:24:03 IST" name="Default test" finished-at="2024-03-01T13:32:45 IST" duration-ms="521746">
       <class name="TestRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:18:39 IST" name="setUpClass" finished-at="2024-02-29T15:18:41 IST" duration-ms="1089" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:24:03 IST" name="setUpClass" finished-at="2024-03-01T13:24:04 IST" duration-ms="1244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@25d168d8]]>
+                <![CDATA[org.testng.TestRunner@279151f4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:18:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:19:36 IST" duration-ms="55265" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Zigwheels Application  funcionalities"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels End To End"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
-at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/EndToEnd.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:19:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:20:42 IST" duration-ms="65899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Google login with Invalid mail"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels End To End"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:20:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:21:54 IST" duration-ms="72206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Google login with Valid mail"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels End To End"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:21:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:23:03 IST" duration-ms="68570" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Facebook login Validations"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels End To End"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:23:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:24:31 IST" duration-ms="88072" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Facebook login Validations"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels End To End"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:24:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:25:53 IST" duration-ms="82551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["used car and search bar Hover validation"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:25:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:26:55 IST" duration-ms="62243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Displays Bikes by Applying displcement filter"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:26:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:28:00 IST" duration-ms="64628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validations of New Cars Fuel Type Filter"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:28:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:28:51 IST" duration-ms="50946" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validation of Cardekho Webpage"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:28:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:30:49 IST" duration-ms="118526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate Login using Google option with valid email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:30:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:31:39 IST" duration-ms="49822" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["validate Login using Facebook with Invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:31:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:32:32 IST" duration-ms="52390" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["validate Login using Facebook with Invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["ZigWheels Regressions"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:32:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:33:24 IST" duration-ms="51837" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:24:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-01T13:25:00 IST" duration-ms="55373" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,7 +37,7 @@ at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/ecl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:33:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:34:07 IST" duration-ms="43424" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:25:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-01T13:26:06 IST" duration-ms="66294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,27 +50,10 @@ at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/ecl
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels] but found [Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at StepDefination.stepDef1.user_is_nevigated_to_the_upcoming_bikes_page(stepDef1.java:120)
-at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/eclipse-workspace/Hackathon_Identify_bikes/src/test/resources/Features/smokes.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:34:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:39:19 IST" duration-ms="311620" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:26:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-01T13:29:56 IST" duration-ms="229449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -295,7 +69,7 @@ at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/ecl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:39:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T15:40:13 IST" duration-ms="54301" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:29:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-01T13:30:49 IST" duration-ms="52953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,7 +85,7 @@ at ✽.user is nevigated to the upcoming bikes page(file:///C:/Users/2303697/ecl
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-02-29T15:40:13 IST" name="tearDownClass" finished-at="2024-02-29T15:41:34 IST" duration-ms="81313" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testRunner@41a0aa7d]" started-at="2024-03-01T13:30:49 IST" name="tearDownClass" finished-at="2024-03-01T13:32:45 IST" duration-ms="116369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

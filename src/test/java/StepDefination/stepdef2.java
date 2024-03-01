@@ -26,11 +26,9 @@ import io.cucumber.java.en.When;
 
 public class stepdef2 {
 
-	// public static WebDriver driver = HelperClass.getDriver();
 	public static WebDriver driver;
 	static Properties Pr;
-	// smoke f1;
-	// regression f2;
+
 	usedCars ucs;
 	newbikesFilter bikefilter;
 	newCars newC;
@@ -43,8 +41,7 @@ public class stepdef2 {
 
 		driver = HelperClass.getDriver();
 		driver.navigate().to("https://www.zigwheels.com/");
-		// f1 = new smoke(driver);
-		// f2 = new regression(driver);
+
 		ucs = new usedCars(driver);
 		bikefilter = new newbikesFilter(driver);
 		newC = new newCars(driver);

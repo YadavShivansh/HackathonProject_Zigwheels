@@ -12,7 +12,7 @@ Feature: ZigWheels End To End
     When user clicks on the "<Bike Category>"
     Then user is nevigated to the upcoming bikes page
     When user  mapulated to the manufacturer dropdown
-    Then user select "<Manufacturer_name>"
+    Then user select "<Manufacturer_name>" 
     When User scroll and click View More
     Then List of the bikes is displayed
     
@@ -25,7 +25,8 @@ Feature: ZigWheels End To End
     Given Homepage of ZigWheels
     When User hover on Used Cars
     And User select "<Location>" in Location options
-    And Scroll till  list of popular Brands
+    And User scroll till list of popular Brands
+    Then User scoll popular model list 
     Then User selects brands and displays cars list
     
     

@@ -16,6 +16,7 @@ public class loginGoogle extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
+	login lg;
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
