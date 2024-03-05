@@ -2,24 +2,25 @@ Feature: ZigWheels Regressions
 
   @Regression
   Scenario: used car and search bar Hover validation
-  Given Homepage of Zigwheels
-  When user Hover on Used Cars
-  Then Dropdown is displayed
-  When User Clicks on the search Bar
-  Then Search Options is displayed
-  
+    Given Homepage of Zigwheels
+    When user Hover on Used Cars
+    Then Dropdown is displayed
+    When User Clicks on the search Bar
+    Then Search Options is displayed
+
   @Regresion
   Scenario Outline: Displays Bikes by Applying displcement filter
-  Given Homepage of Zigwheels
-  When the User clicks on New Bikes
-  And  the user clicks displacement filter
-  Then the user selects bike a displacement range "<range>"
-  Then  Displays Bike name and Displacement
-  Examples:
-  |    range   |
-  |126cc - 150cc bikes|
-  
- 	 Scenario Outline: Validations of New Cars Fuel Type Filter
+    Given Homepage of Zigwheels
+    When the User clicks on New Bikes
+    And the user clicks displacement filter
+    Then the user selects bike a displacement range "<range>"
+    Then Displays Bike name and Displacement
+
+    Examples: 
+      | range               |
+      | 126cc - 150cc bikes |
+
+  Scenario Outline: Validations of New Cars Fuel Type Filter
     Given Homepage of Zigwheels
     When The User clicks on New Cars
     And The User select Fuel Type filter
@@ -29,15 +30,13 @@ Feature: ZigWheels Regressions
     Examples: 
       | Fuel   |
       | Diesel |
-			
-  Scenario: Validation of Cardekho Webpage 
+
+  Scenario: Validation of Cardekho Webpage
     Given Homepage of Zigwheels
     When User hover on More in Header
     And Select Sell Car to Cardekho Gaadi Store
     Then User is nevigated to the Car dekho home page
 
-
-  
   Scenario Outline: Validate Login using Google option with valid email
     Given Homepage of Zigwheels
     When The user clicks on Login button
@@ -66,4 +65,4 @@ Feature: ZigWheels Regressions
     Examples: 
       | fbcred            | password   |
       | werst12@gmail.com | o85348jfej |
-      |    9983499384     | o85348jfe  |
+      |        9983499384 | o85348jfe  |

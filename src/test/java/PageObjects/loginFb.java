@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ public class loginFb extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//div[@onclick='fb_login();']")
+	@FindBy(xpath = "(//div[@class='newgf-login']/div[1])[1]")
 	public WebElement Fb;
 
 	@FindBy(xpath = "//input[@id='email']")
@@ -27,7 +28,11 @@ public class loginFb extends BasePage {
 	public WebElement FbError;
 
 	public void selectfb() {
-		Fb.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].click();", Fb);
+		System.out.println(Fb.getText());
+		// Fb.click();
 	}
 
 	public WebElement enterCred() {

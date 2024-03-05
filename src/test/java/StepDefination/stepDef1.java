@@ -37,12 +37,20 @@ public class stepDef1 {
 	public void homepage_of_zig_wheels() {
 
 		driver = HelperClass.getDriver();
-		driver.navigate().to("https://www.zigwheels.com/");
 		fE = new fundamentalElement(driver);
 		bike = new newBikes(driver);
 		car = new usedCars(driver);
 		g = new login(driver);
 		ggl = new loginGoogle(driver);
+	}
+
+	@Given("User is nevigated back to ZigWheels homepage")
+	public void user_is_nevigated_back_to_zigWheels_homepage() {
+
+		driver = HelperClass.getDriver();
+		driver.navigate().to("https://www.zigwheels.com/");
+		car = new usedCars(driver);
+
 	}
 
 	@Then("ZigWheels logo should be displayed")
@@ -213,6 +221,17 @@ public class stepDef1 {
 		} catch (StaleElementReferenceException e) {
 
 		}
+
+	}
+
+	@Then("User is nevigated to the Used Cars page")
+	public void User_is_nevigated_to_the_Used_Cars_page() throws IOException {
+
+		Pr = HelperClass.getProperties();
+		String expectedTitle = Pr.getProperty("Used_Cars_PageTitile");
+		String actualTitle = driver.getTitle();
+
+		Assert.assertTrue(actualTitle.contains(expectedTitle));
 
 	}
 

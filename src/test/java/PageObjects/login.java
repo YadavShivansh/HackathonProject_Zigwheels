@@ -31,7 +31,7 @@ public class login extends BasePage {
 	@FindBy(xpath = "//span[normalize-space()='Next']")
 	public WebElement nxtButton;
 
-	@FindBy(xpath = "//div[@class='o6cuMc Jj6Lae']")
+	@FindBy(xpath = "//div[@aria-live='assertive']/div")
 	public WebElement mailError;
 
 	public void clickLogin() {

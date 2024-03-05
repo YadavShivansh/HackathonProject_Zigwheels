@@ -40,7 +40,6 @@ public class stepdef2 {
 	public void homepage_of_zig_wheels() {
 
 		driver = HelperClass.getDriver();
-		driver.navigate().to("https://www.zigwheels.com/");
 
 		ucs = new usedCars(driver);
 		bikefilter = new newbikesFilter(driver);
@@ -48,6 +47,18 @@ public class stepdef2 {
 		ggl = new loginGoogle(driver);
 		fb = new loginFb(driver);
 		Bs = new fundamentalElement(driver);
+	}
+
+	@Given("User is nevigated back to Zigwheels homepage")
+	public void user_is_nevigated_back_to_zigwheels_homepage() {
+
+		driver = HelperClass.getDriver();
+		driver.navigate().to("https://www.zigwheels.com/");
+		Bs = new fundamentalElement(driver);
+		ucs = new usedCars(driver);
+		bikefilter = new newbikesFilter(driver);
+		newC = new newCars(driver);
+
 	}
 
 	@When("user Hover on Used Cars")
@@ -185,10 +196,20 @@ public class stepdef2 {
 	@Then("User is nevigated to the Car dekho home page")
 	public void user_is_nevigated_to_the_car_dekho_home_page() throws IOException {
 
+		String originalWindow = driver.getWindowHandle();
+
+		for (String windowHandle : driver.getWindowHandles()) {
+			if (!originalWindow.contentEquals(windowHandle)) {
+				driver.switchTo().window(windowHandle);
+				break;
+			}
+		}
+
 		Pr = HelperClass.getProperties();
 		String expectedTitle = Pr.getProperty("CarDekh_Title");
-		String actualTitle = driver.getTitle();
 
+		String actualTitle = driver.getTitle();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}

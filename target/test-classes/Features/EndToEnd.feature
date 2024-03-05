@@ -1,6 +1,7 @@
 Feature: ZigWheels End To End
 
-  Scenario Outline: Zigwheels Application  funcionalities
+  Scenario Outline: Zigwheels Web app functionalities
+  
     Given Homepage of ZigWheels
     Then ZigWheels logo should be displayed
     And Searchbox should be displayed
@@ -16,33 +17,35 @@ Feature: ZigWheels End To End
     When User scroll and click View More
     Then List of the bikes is displayed
     
-    Given Homepage of Zigwheels
+    Given User is nevigated back to Zigwheels homepage
     When user Hover on Used Cars
     Then Dropdown is displayed
     When User Clicks on the search Bar
     Then Search Options is displayed
     
-    Given Homepage of ZigWheels
+    Given User is nevigated back to ZigWheels homepage
     When User hover on Used Cars
     And User select "<Location>" in Location options
-    And User scroll till list of popular Brands
+    Then User is nevigated to the Used Cars page 
+    When User scroll till list of popular Brands
     Then User scoll popular model list 
     Then User selects brands and displays cars list
     
     
     
-    Given Homepage of Zigwheels
+    Given User is nevigated back to Zigwheels homepage
     When the User clicks on New Bikes
     And the user clicks displacement filter
     Then the user selects bike a displacement range "<range>"
     Then Displays Bike name and Displacement
     
-    Given Homepage of Zigwheels
+    Given User is nevigated back to Zigwheels homepage
     When The User clicks on New Cars
     And The User select Fuel Type filter
     Then The User selcet Fuel Type "<Fuel>"
     And Validate the Displayed result with "<Fuel>"
-    Given Homepage of Zigwheels
+    
+    Given User is nevigated back to Zigwheels homepage
     When User hover on More in Header
     And Select Sell Car to Cardekho Gaadi Store
     Then User is nevigated to the Car dekho home page

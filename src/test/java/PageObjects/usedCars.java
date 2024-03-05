@@ -126,11 +126,13 @@ public class usedCars extends BasePage {
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 			Thread.sleep(1000);
 			String model = brands.get(i).getText();
+			int size = carsName.size();
+			int loopLimit = Math.min(size, 20);
 
-			for (int j = 0; j < carsName.size(); j++) {
+			for (int j = 0; j < loopLimit; j++) {
 
 				try {
-					System.out.println(j);
+					System.out.println(j + " " + carsName.get(j).getText());
 					excelUtils.setCellData(xlpath, model, j + 1, 0, carsName.get(j).getText());
 					excelUtils.setCellData(xlpath, model, j + 1, 1, carsPrice.get(j).getText());
 					excelUtils.setCellData(xlpath, model, j + 1, 2, carsCity.get(j).getText());
