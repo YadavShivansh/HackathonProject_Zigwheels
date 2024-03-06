@@ -12,7 +12,8 @@ public class loginFb extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "(//div[@class='newgf-login']/div[1])[1]")
+	//@FindBy(xpath = "(//div[@class='newgf-login']/div[1])[1]")
+	@FindBy(xpath="(//span[contains(text(),'Facebook')])")
 	public WebElement Fb;
 
 	@FindBy(xpath = "//input[@id='email']")
